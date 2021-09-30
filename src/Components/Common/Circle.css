@@ -1,0 +1,56 @@
+.design > div {
+  background: linear-gradient(
+    116.82deg,
+    rgba(255, 255, 255, 0.6) 0%,
+    rgba(255, 255, 255, 0.404) 100%
+  );
+  filter: blur(20px);
+  backdrop-filter: blur(94px);
+  border-radius: 50%;
+}
+
+.circle1 {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  left: 893px;
+  top: 199px;
+}
+
+.circle2 {
+  position: absolute;
+  width: 252px;
+  height: 252px;
+  left: 534px;
+  background: linear-gradient(
+    116.82deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.18) 100%
+  ) !important;
+  top: 658px;
+  opacity: 0.6;
+}
+
+.circle3 {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  left: -174px;
+  top: -138px;
+}
+
+.circle5 {
+  position: absolute;
+  width: 236px;
+  height: 236px;
+  left: 1134px;
+  top: 27px;
+}
+
+.circle6 {
+  position: absolute;
+  width: 522px;
+  height: 522px;
+  left: 1637px;
+  top: 800px;
+}

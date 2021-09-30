@@ -1,0 +1,56 @@
+.Navbar {
+  padding: 2% 10%;
+}
+.Navbar img {
+  height: 70px;
+  width: auto;
+}
+.body {
+  padding: 1% 10%;
+  display: flex;
+  gap: 20px;
+}
+.body a {
+  width: 100%;
+}
+.body a > div {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 700px;
+  border-radius: 12px;
+  opacity: 0.6;
+}
+
+.body a > div:nth-child(1) {
+  background-image: url("../../Image/Rectangle\ 19.png");
+}
+
+.body a > div:nth-child(2) {
+  background-image: url("../../Image/Rectangle\ 20.png");
+}
+
+.body a > div:hover {
+  box-shadow: 0px 0px 12px 2px rgba(255, 255, 255, 0.288);
+  opacity: 1;
+  cursor: pointer;
+}
+.body .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+}
+.body .wrapper img {
+  height: 200px;
+  width: 200px;
+}
+.body .wrapper h1 {
+  color: white;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 35px;
+}

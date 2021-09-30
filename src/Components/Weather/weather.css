@@ -1,0 +1,103 @@
+.background1 {
+  background-image: url("../../Image/Snow.png");
+  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weatherPanel {
+  width: 50%;
+  height: 70%;
+
+  background: linear-gradient(
+    110.04deg,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0.14) 100%
+  );
+  backdrop-filter: blur(5px);
+  border-radius: 12px;
+}
+
+.weatherPanel {
+  padding: 2% 4%;
+}
+
+.weatherPanel .weatherHeader img {
+  width: 80%;
+  height: 80%;
+}
+.weatherHeader {
+  display: flex;
+  margin: 3% 0px;
+  justify-content: space-between;
+}
+.weatherHeader h1 {
+  font-size: 24px;
+  color: #dddddd;
+  font-weight: 400;
+}
+.weatherBody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60%;
+  flex-direction: column;
+}
+.weather {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.weatherBody .input {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  align-items: center;
+  border: 2px solid #dddddd;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 6px 10px;
+}
+
+.weatherBody .input input {
+  background: transparent;
+  font-size: 16px;
+  width: 93%;
+  color: #ffffff;
+}
+
+.weatherBody .input input::placeholder {
+  color: #dddddd;
+}
+
+.weatherBody h1 {
+  color: #dddddd;
+  font-weight: 400;
+}
+.temperature {
+  display: flex;
+  align-items: center;
+}
+.temperature h1 {
+  font-size: 110px;
+  color: #ffffff;
+}
+
+.weatherDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #ffffff;
+  width: 100%;
+}
+
+.weatherDetails p {
+  margin-right: 10px;
+}
+.weatherDetails img {
+  margin-right: 10px;
+}
