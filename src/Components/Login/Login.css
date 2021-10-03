@@ -90,6 +90,22 @@
     height: 100vh;
     width: 100vw;
   }
+  .logoheading {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logoheading h1 {
+    font-size: 28px;
+  }
+  .loginpannel .loginForm p {
+    font-size: 14px;
+  }
+  .loginpannel .logoheading img {
+    height: 100px;
+    width: 150px;
+  }
 }
 @media All and (max-width: 1366) {
   .loginpannel {

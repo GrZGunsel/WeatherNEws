@@ -5,10 +5,18 @@ import Weatherimage from "../Common/Weatherimage";
 import Newsimage from "../Common/Newsimage";
 import { Link } from "react-router-dom";
 const Home = () => {
+  const handleSubmit = () => {
+    localStorage.clear();
+  };
   return (
     <div className="background">
       <section className="Navbar">
         <Logo />
+        <Link to="/">
+          <div className="logout">
+            <button onClick={handleSubmit}> logout</button>
+          </div>
+        </Link>
       </section>
       <section className="body">
         <Link to="/weather">
