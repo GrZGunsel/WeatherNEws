@@ -1,12 +1,16 @@
 .Navbar {
-  padding: 2% 10%;
+  padding: 2% 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
 .Navbar img {
-  height: 70px;
+  height: 50px;
   width: auto;
 }
 .body {
-  padding: 1% 10%;
+  padding: 2% 5%;
   display: flex;
   gap: 20px;
 }
@@ -20,16 +24,18 @@
   justify-content: center;
   align-items: center;
   height: 700px;
-  border-radius: 12px;
+  border-radius: 6px;
   opacity: 0.6;
 }
 
 .body a > div:nth-child(1) {
   background-image: url("../../Image/Rectangle\ 19.png");
+  background-position: center;
 }
 
 .body a > div:nth-child(2) {
   background-image: url("../../Image/Rectangle\ 20.png");
+  background-position: center;
 }
 
 .body a > .wrapper:hover {
@@ -53,4 +59,32 @@
   font-style: normal;
   font-weight: 600;
   font-size: 35px;
+}
+
+@media All and (max-width: 600px) {
+  .body {
+    display: flex;
+    flex-direction: column;
+  }
+  .body a > div {
+    width: 100%;
+    height: 44vh;
+  }
+  .body .wrapper img {
+    height: 100px;
+    width: 100px;
+  }
+  .body .wrapper h1 {
+    font-size: 24px;
+  }
+}
+
+@media All and (max-width: 1024px) {
+  .body .wrapper img {
+    height: 150px;
+    width: 150px;
+  }
+  .body .wrapper h1 {
+    font-size: 26px;
+  }
 }

@@ -101,3 +101,16 @@
 .weatherDetails img {
   margin-right: 10px;
 }
+@media All and (max-width: 600px) {
+  .weatherPanel {
+    height: 100vh;
+    width: 100vw;
+    padding: 2%;
+  }
+  .weatherBody .input {
+    width: 100%;
+  }
+  .weatherHeader {
+    margin: 10% 0;
+  }
+}

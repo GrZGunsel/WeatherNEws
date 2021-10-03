@@ -58,10 +58,11 @@
     display: none;
   }
   .circle1 {
-    display: none;
+    left: 148px;
+    top: 90px;
   }
   .circle3 {
-    width: 100px;
-    height: 100px;
+    width: 102px;
+    height: 102px;
   }
 }
