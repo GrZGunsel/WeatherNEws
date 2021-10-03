@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 
 import WeatherDetail from "./weatherDetail";
 import axios from "axios";
-const baseUrl = "http://api.openweathermap.org/data/2.5/weather?";
+const baseUrl = "https://api.openweathermap.org/data/2.5/weather?";
 const apiKey = "c6a3f9bc1d4cd1d44fe185ed01d28006";
 
 const Weather = () => {
