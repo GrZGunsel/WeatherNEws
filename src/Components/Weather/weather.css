@@ -1,17 +1,29 @@
 .background1 {
-  background-image: url("../../Image/Snow.png");
   background-position: center;
   width: 100vw;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("../../Image/Cloudy.png");
+}
+.Rain {
+  background-image: url("../../Image/Rain.png");
 }
 
+.Clear {
+  background-image: url("../../Image/Summer.png");
+}
+
+.Clouds {
+  background-image: url("../../Image/Cloudy.png");
+}
+.mist {
+  background-image: url("https://images.unsplash.com/photo-1495294926616-f282c4219dfc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1082&q=80");
+}
 .weatherPanel {
   width: 50%;
   height: 70%;
-
   background: linear-gradient(
     110.04deg,
     rgba(255, 255, 255, 0.25) 0%,
@@ -31,6 +43,7 @@
 }
 .weatherHeader {
   display: flex;
+  align-items: center;
   margin: 3% 0px;
   justify-content: space-between;
 }
@@ -52,7 +65,11 @@
   align-items: center;
   justify-content: center;
 }
-.weatherBody .input {
+.temperature {
+  display: flex;
+  align-items: center;
+}
+.input {
   display: flex;
   justify-content: space-between;
   width: 40%;
@@ -63,14 +80,14 @@
   padding: 6px 10px;
 }
 
-.weatherBody .input input {
+.input input {
   background: transparent;
   font-size: 16px;
   width: 93%;
   color: #ffffff;
 }
 
-.weatherBody .input input::placeholder {
+.input input::placeholder {
   color: #dddddd;
 }
 
@@ -78,7 +95,7 @@
   color: #dddddd;
   font-weight: 400;
 }
-.temperature {
+.weatherBody.temperature {
   display: flex;
   align-items: center;
 }
@@ -94,12 +111,33 @@
   color: #ffffff;
   width: 100%;
 }
-
+.back-button {
+  margin: 10px 0px;
+}
+.back {
+  height: 0;
+  width: 0;
+}
 .weatherDetails p {
   margin-right: 10px;
 }
 .weatherDetails img {
   margin-right: 10px;
+}
+.null {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 40vh;
+}
+.null .input {
+  margin-bottom: 23px;
+}
+.null h1 {
+  font-size: 16px;
+  color: #75eeff;
+  font-weight: 500;
 }
 @media All and (max-width: 600px) {
   .weatherPanel {
@@ -107,7 +145,23 @@
     width: 100vw;
     padding: 2%;
   }
-  .weatherBody .input {
+
+  .back {
+    width: 50px;
+    margin: 0;
+    outline: none;
+    border: none;
+    height: 50px;
+    background: linear-gradient(
+      127.59deg,
+      rgba(255, 255, 255, 0.5) -1.81%,
+      rgba(255, 255, 255, 0.3) -1.8%,
+      rgba(255, 255, 255, 0.2) 105.06%
+    );
+    border-radius: 50%;
+    backdrop-filter: blur(50px);
+  }
+  .input {
     width: 100%;
   }
   .weatherHeader {

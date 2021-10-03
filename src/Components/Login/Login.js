@@ -32,10 +32,10 @@ const Login = () => {
             type="text"
             value={name}
             id="name"
-            placeholder="your name"
+            placeholder="Your name"
             onChange={handleChange}
           />
-          <input type="text" id="purpose" placeholder="your purpose" />
+          <input type="text" id="purpose" placeholder="Your purpose" />
         </div>
         <div className="Submit">
           <Link to="/" className="link">

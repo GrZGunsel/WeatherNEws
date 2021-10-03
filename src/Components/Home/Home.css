@@ -30,12 +30,10 @@
 
 .body a > div:nth-child(1) {
   background-image: url("../../Image/Rectangle\ 19.png");
-  background-position: center;
 }
 
 .body a > div:nth-child(2) {
   background-image: url("../../Image/Rectangle\ 20.png");
-  background-position: center;
 }
 
 .body a > .wrapper:hover {
@@ -47,8 +45,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
+  background-size: cover;
   flex-direction: column;
+  background-position: center;
 }
 .body .wrapper img {
   height: 200px;
@@ -68,7 +67,7 @@
   }
   .body a > div {
     width: 100%;
-    height: 44vh;
+    height: 42vh;
   }
   .body .wrapper img {
     height: 100px;
@@ -83,8 +82,5 @@
   .body .wrapper img {
     height: 150px;
     width: 150px;
-  }
-  .body .wrapper h1 {
-    font-size: 26px;
   }
 }
