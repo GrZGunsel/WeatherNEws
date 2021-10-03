@@ -86,10 +86,12 @@
 }
 
 @media All and (max-width: 600px) {
+  .background {
+    height: 100%;
+  }
   .loginpannel {
     height: 100vh;
     width: 100vw;
-    overflow: hidden;
   }
   .logoheading {
     display: flex;
