@@ -4,8 +4,11 @@ import SearchIcon from "../../Image/Search.svg";
 import "./weather.css";
 
 import { Link } from "react-router-dom";
-import { getWeatherData } from "./weatherAPi";
+
 import WeatherDetail from "./weatherDetail";
+import axios from "axios";
+const baseUrl = "http://api.openweathermap.org/data/2.5/weather?";
+const apiKey = "c6a3f9bc1d4cd1d44fe185ed01d28006";
 
 const Weather = () => {
   const Name = localStorage.getItem("name");
@@ -14,9 +17,14 @@ const Weather = () => {
 
   const search = async (e) => {
     if (e.key === "Enter") {
-      const data = await getWeatherData(City);
-      setweatherData(data);
-      setCity("");
+      try {
+        const { data } = await axios.get(baseUrl + `q=${City}&appid=${apiKey}`);
+        setweatherData(data);
+        setCity("");
+        return data;
+      } catch (error) {
+        throw error;
+      }
     }
   };
   useEffect(() => {}, [weatherData]);
