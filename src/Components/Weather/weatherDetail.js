@@ -1,5 +1,5 @@
 import React from "react";
-import WeatherImage from "../Common/Weatherimage";
+
 import Humidity from "../../Image/humidity.svg";
 import Speed from "../../Image/speed.svg";
 import Pressure from "../../Image/Pressure.svg";

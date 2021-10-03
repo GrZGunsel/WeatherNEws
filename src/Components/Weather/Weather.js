@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Logo from "../Common/Logo";
 import SearchIcon from "../../Image/Search.svg";
 import "./weather.css";
@@ -19,10 +19,10 @@ const Weather = () => {
       setCity("");
     }
   };
-  console.log(weatherData);
+  useEffect(() => {}, [weatherData]);
   return (
     <div>
-      <div className={` background1`}>
+      <div className={`background1`}>
         <div className="weatherPanel">
           <div className="back-button">
             <Link to="/">
