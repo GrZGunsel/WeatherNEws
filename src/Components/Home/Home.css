@@ -32,8 +32,8 @@
   background-image: url("../../Image/Rectangle\ 20.png");
 }
 
-.body a > div:hover {
-  box-shadow: 0px 0px 12px 2px rgba(255, 255, 255, 0.288);
+.body a > .wrapper:hover {
+  box-shadow: 0px 0px 12px 2px rgba(255, 255, 255, 0.719);
   opacity: 1;
   cursor: pointer;
 }

@@ -84,3 +84,16 @@
   border-radius: 12px;
   cursor: pointer;
 }
+
+@media All and (max-width: 600px) {
+  .loginpannel {
+    height: 100vh;
+    width: 100vw;
+  }
+}
+@media All and (max-width: 1366) {
+  .loginpannel {
+    height: 500px;
+    width: 350px;
+  }
+}

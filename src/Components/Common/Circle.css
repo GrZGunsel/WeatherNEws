@@ -47,10 +47,21 @@
   top: 27px;
 }
 
-.circle6 {
-  position: absolute;
-  width: 522px;
-  height: 522px;
-  left: 1637px;
-  top: 800px;
+@media All and (max-width: 1366px) {
+  .circle5 {
+    display: none;
+  }
+  .circle2 {
+    display: none;
+  }
+  .circle6 {
+    display: none;
+  }
+  .circle1 {
+    display: none;
+  }
+  .circle3 {
+    width: 100px;
+    height: 100px;
+  }
 }
